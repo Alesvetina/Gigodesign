@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gigodesign - Home</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+  	<div class="container">
+	  	<form id="form" action="preview.html" method="post">
+		  	<header class="row text-center">
+		  		<div class="col-xs-2">
+			  		<div id="back"></div>
+		  		</div>
+	  			<div class="col-xs-8">
+			  		<h2>NEW POST</h2>
+			  	</div>
+			  	<div class="col-xs-2">
+			  		<input id="eye" type="submit" class="button" />
+			  	</div>
+		  	</header>
+	  		<div class="row form-group">
+	  			<div class="col-sm-6 col-xs-12">
+			  		<select id="category" name="category" required>
+			  			<option value="" disabled selected>CATEGORY</option>
+			  			<option value="REVIJA">REVIJA</option>
+			  			<option value="OSTALO">OSTALO</option>
+			  		</select>
+		  		</div>
+		  	</div>
+		  	<div class="row form-group">
+	  			<div class="col-sm-6 col-xs-12">
+	  				<input id="tags" name="tags" type="text" placeholder="#tags..." required />
+  				</div>
+		  	</div>
+		  	<div class="row form-group">
+	  			<div class="col-sm-6 col-xs-12 wrap">
+	  				<textarea id="title" name="title" rows="3" placeholder="Title..." maxlength="75" required></textarea>
+	  				<span id="title_counter">75</span>
+					</div>
+		  	</div>
+		  	<div class="row form-group">
+		  		<div class="col-sm-6 col-xs-12">
+		  			<p class="time opacity"><span id="now"></span> <strong class="bold yellow">f/p</strong> <u>FOKUSPOKUS</u></p>
+		  		</div>
+		  	</div>
+	  		<div class="row form-group">
+	  			<div class="col-sm-6 col-xs-12 wrap">
+	  				<textarea id="content" name="content" rows="3" placeholder="Need to know..." maxlength="250" required></textarea>
+	  				<span id="content_counter">250</span>
+	  			</div>
+		  	</div>
+	  		<div class="row form-group">
+	  			<div class="col-sm-6 col-xs-12">
+				  	<div id="user" class="opacity">
+							<svg width="36" height="38">
+							  <defs>
+							      <pattern id="imgpattern" x="0" y="0" width="1" height="1">
+							        <image width="38" height="38"
+							               xlink:href="images/profile.jpg"/>
+							      </pattern>
+							  </defs>
+								<path fill="url(#imgpattern)" d="M4.11,29.121C1.54,26.042,0,22.09,0,17.781C0,7.966,8.03,0,17.94,0
+									c9.9,0,17.94,7.966,17.94,17.781c0,9.826-8.04,17.792-17.94,17.792c-2.38,0-4.66-0.462-6.74-1.303l-8.67,3.563H2.52L4.1,29.11" />
+						  </svg>
+						  <u id="user_name"></u>
+						</div>
+					</div>
+		  	</div>
+		  	<div class="row form-group">
+	  			<div class="col-sm-3 col-xs-5">
+						<input type="button" value="PUBLISH" class="button" />
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<input type="button" value="SAVE AS DRAFT" class="button white" />
+					</div>
+		  	</div>
+	  	</form>
+	  </div>
+
+  </body>
+</html>
